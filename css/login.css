@@ -13,6 +13,7 @@ body{
         "header"
         "lugin";
     height: 100vh;
+    background: #d1ecc7;
 }
 
 /* navbar */
@@ -36,7 +37,6 @@ body{
 
 #lugin{
     grid-area: lugin;
-    background: #d1ecc7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +71,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     position: relative;
     margin-top: 15px;
 }
@@ -84,7 +84,7 @@ body{
     background: rgba(214, 211, 211, 0.1);
     outline: none;
     color: #617a63;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .cx-inputa input:focus {
@@ -99,9 +99,13 @@ body{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 15%;
+    left: 7%;
     color: #84A686;
-    font-size: 18px;
+    font-size: 15px;
+}
+
+#arroba{
+    font-size: 20px;
 }
 
 #lugin a{
