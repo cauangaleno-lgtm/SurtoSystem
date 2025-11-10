@@ -8,7 +8,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 80px 1fr;
     grid-template-areas: 
         "header"
         "lugin";
@@ -23,7 +23,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 80px;
     background: #95C577;
     color: #fff;
     z-index: 10000;
@@ -36,7 +36,7 @@ body{
 
 #lugin{
     grid-area: lugin;
-    background: #DEEED4;
+    background: #d1ecc7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@ body{
     align-items: center;
     justify-content: center;
     position: fixed;
-    right: 25%;
+    right: 26%;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(6px);
     border-radius: 25px;
@@ -64,4 +64,55 @@ body{
 
 #logdiv h1{
     color: #84A686;
+    margin-bottom: 20px;
 }
+
+.cx-inputa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+}
+
+.cx-inputa input {
+    width: 80%;
+    padding: 8px 16px 8px 38px;
+    border-radius: 99px;
+    border: solid rgba(149, 197, 119, 0.568) 3px;
+    background: rgba(214, 211, 211, 0.1);
+    outline: none;
+    color: #617a63;
+    font-size: 17px;
+}
+
+.cx-inputa input:focus {
+    border: solid rgb(130, 185, 95) 3px;
+}
+
+.cx-inputa input::placeholder {
+    color: #84A686;
+}
+
+.cx-inputa i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15%;
+    color: #84A686;
+    font-size: 18px;
+}
+
+#buton{
+    width: 60%;
+    padding: 10px 0;
+    background: #95C577;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
