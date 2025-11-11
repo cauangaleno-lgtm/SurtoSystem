@@ -1,3 +1,4 @@
+
 /* background */
 * {
     margin: 0;
@@ -11,7 +12,7 @@ body {
     grid-template-rows: 80px 1fr;
     grid-template-areas:
         "header"
-        "dashboard";
+        "registros";
     height: 100vh;
     background: #d1ecc7;
 }
@@ -51,14 +52,14 @@ body {
 
 /* dashboard */
 
-#secdashboard {
-    grid-area: dashboard;
+#secregis {
+    grid-area: registros;
     display: flex;
     justify-content: center;
 
 }
 
-#dashboard {
+#registros{
     margin-top: 10px;
     width: 80%;
     background: #EBF5E5;
@@ -70,63 +71,52 @@ body {
     align-items: center;
 }
 
-#dashheader {
-    width: 80%;
-    margin-top: 60px;
-    margin-bottom: 40px;
+#regheader{
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
     align-items: center;
+    margin-top: 60px;
     color: #84A686;
 }
 
-#dashheader i {
-    font-size: 75px;
+#regheader h1{
+    font-size: 40px;
 }
 
-#textos {
-    margin-left: 3%;
-}
-
-#cards {
-    width: 90%;
+#topo{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    width: 77%;
+    justify-content: end;
 }
 
-.dvdash{
-    width: 23%;
-    height: 150px;
+#topo button{
+    background: #95C577;
+    color: #EBF5E5;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 99px;
+    cursor: pointer;
+}
+
+#filtro{
+    width: 70%;
     display: flex;
-    border-radius: 15px;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
-    background: #ADDF95;
-    border: solid 4px#84AF68;
-    color: #ffffff;
-}
-
-.dvdash h1{
-    font-size: 52px;
-}
-
-#parahoje {
-    width: 89.3%;
-    height: 53.5%;
-    display: flex;
-    border-radius: 15px;
-    flex-direction: column;
+    margin: 20px;
+    background: #EBF5E5;
+    border: solid 4px #84AF68;
+    color: #84A686;
+    font-size: 15px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 99px;
     align-items: center;
-    justify-content: space-around;
-    background: #ADDF95;
-    border: solid 4px#84AF68;
-    color: #ffffff;
 }
 
-#parahoje h1{
-    font-size: 36px;
-    margin-top: 20px;
+#filtro i{
+    font-size: 30px;
 }
 
 .registros {
@@ -134,12 +124,11 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin: 10px;
-    background: #EBF5E5;
-    border: solid 4px #84AF68;
-    color: #84A686;
+    background: #95C577;
+    color: #EBF5E5;
     font-size: 20px;
     padding: 25px 0px 25px 0px;
-    border-radius: 99px;
+    border-radius: 35px;
     align-items: center;
 }
 
@@ -147,7 +136,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #84A686;
+    color: #EBF5E5;
     position: relative;
 }
 
@@ -158,7 +147,7 @@ body {
     bottom: -1px;
     width: 96%;
     height: 3px;
-    background: #84A686;
+    background: #EBF5E5;
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform .4s;
