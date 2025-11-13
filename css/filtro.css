@@ -102,18 +102,25 @@ body {
 }
 
 #filtro{
-    width: 70%;
+    width: 56%;
+    height: 300px;
     display: flex;
     justify-content: space-evenly;
-    margin: 20px;
     background: #EBF5E5;
     border: solid 4px #84AF68;
     color: #84A686;
     font-size: 15px;
     padding: 5px 0px 5px 0px;
-    border-radius: 99px;
-    align-items: center;
+    border-radius: 25px;
     z-index: 1;
+    position: fixed;
+    top: 265px;
+}
+
+#filt-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #filtro a{
@@ -123,6 +130,18 @@ body {
 
 #filtro i{
     font-size: 30px;
+}
+
+#filtro a, h2{
+    margin-top: 4px;
+}
+
+#baguio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 92px;
 }
 
 .registros {
@@ -136,6 +155,18 @@ body {
     padding: 25px 0px 25px 0px;
     border-radius: 35px;
     align-items: center;
+}
+
+.caixa{
+    width: 18px;
+    height: 18px;
+    background: none;
+    border: solid 2px #84AF68;
+
+}
+
+.item{
+    display: flex;
 }
 
 .registros a{
