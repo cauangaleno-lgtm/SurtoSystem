@@ -91,7 +91,7 @@ body {
     justify-content: end;
 }
 
-#topo button{
+.butones{
     background: #95C577;
     color: #EBF5E5;
     border: none;
@@ -99,13 +99,13 @@ body {
     padding: 10px 15px 10px 15px;
     border-radius: 99px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 #filtro{
     width: 56%;
     height: 300px;
     display: flex;
-    justify-content: space-evenly;
     background: #EBF5E5;
     border: solid 4px #84AF68;
     color: #84A686;
@@ -115,6 +115,7 @@ body {
     z-index: 1;
     position: fixed;
     top: 265px;
+    flex-direction: column;
 }
 
 #filt-head{
@@ -157,16 +158,62 @@ body {
     align-items: center;
 }
 
+#itens{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pesquisa{
+    display: flex;
+    position: relative;
+    width: 16%;
+    height: 40px;
+}
+
+#pesq{
+    width: 100%;
+    padding: 9px 18px;
+    border: solid #84A686 3px;
+    border-radius: 99px;
+    color: white;
+    cursor: text;
+    background: none;
+    outline: none;
+    
+}
+
+#pesq::placeholder {
+    color: #84A686;
+    font-weight: 600;
+}
+
+#pesquisa i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 14px;
+    color: #84A686;
+    font-size: 18px;
+}
+
+#filtro2{
+    width: 180px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
 .caixa{
     width: 18px;
     height: 18px;
     background: none;
     border: solid 2px #84AF68;
 
-}
-
-.item{
-    display: flex;
 }
 
 .registros a{
