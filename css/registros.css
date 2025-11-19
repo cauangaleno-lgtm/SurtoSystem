@@ -103,7 +103,7 @@ body {
 }
 
 #filtro{
-    width: 60%;
+    width: 40%;
     padding: 5px 0px 5px 0px;
     display: flex;
     justify-content: space-evenly;
@@ -116,11 +116,12 @@ body {
     align-items: center;
     z-index: 1;
     position: absolute;
-    top: 235px;
+    top: 224px;
+    margin-right: 15%;
     flex-direction: column;
 }
 
-#filtro button{
+#btnfiltro{
     color: #84A686;
     border: none;
     background: none;
@@ -141,7 +142,7 @@ body {
 }
 
 .fechado.aberto{
-    max-height: 400px;
+    max-height: 600px;
     opacity: 1;
 }
 
@@ -170,7 +171,7 @@ body {
     padding: 9px 18px;
     border: solid #84A686 3px;
     border-radius: 10px;
-    color: white;
+    color: #84A686;
     cursor: text;
     background: none;
     outline: none;
@@ -232,6 +233,15 @@ body {
     border: solid 2px #84AF68;
 
 }
+
+
+#butao_salvar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
 
 #lista{
     width: 100%;
