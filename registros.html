@@ -12,10 +12,24 @@
 
 <body>
     <header id="navbar">
-        <button id="butnav">
-            <h1>Registros</h1>
-            <i class="bi bi-chevron-down"></i>
-        </button>
+        <div id="navi">
+            <div id="navnav">
+                <button id="butnav">
+                    <h1>Registros</h1>
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+            </div>
+
+            <div id="navnav2" class="fechado">
+                <a href="dashboard.html">
+                    <h6 class="animacao">Dashboard</h6>
+                </a>
+                <a href="registros.html">
+                    <h6 class="animacao">Registros</h6>
+                </a>
+            </div>
+
+        </div>
     </header>
 
     <section id="secregis">
@@ -27,14 +41,33 @@
                 </div>
 
                 <div id="modal_add">
+                    <h1>Novo registro</h1>
+                    <div id="seletordiv">
+                        <label for="seletor">Tipo de tarefa</label>
+                        <select name="seletor" id="seletor">
+                            <option value="A"></option>
+                        </select>
+                    </div>
+
+                    <div id="btnmodal">
+                        <button class="butones">
+                            Avançar
+                        </button>
+                        <button class="butones">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+
+                <div id="modal_detai">
 
                 </div>
 
                 <div id="filtro">
                     <div id="filt-head">
                         <h2>Tipo de tarefa</h2>
-                        <h2>Data</h2>
-                        <h2>Status</h2>
+                        <h2 id="DataH2">Data</h2>
+                        <h2 id="StatusH2">Status</h2>
                         <button id="btnfiltro">
                             <i class="bi bi-filter"></i>
                         </button>
@@ -73,19 +106,19 @@
                                 <div class="item">
                                     <div class="caixa"></div>
                                     <p>Concluído</p>
-                                    <i class="bi bi-person-fill"></i>
+                                    <i class="bi bi-check2"></i>
                                 </div>
 
                                 <div class="item">
                                     <div class="caixa"></div>
                                     <p>Marcado</p>
-                                    <i class="bi bi-person-video3"></i>
+                                    <i class="bi bi-clock"></i>
                                 </div>
 
                                 <div class="item">
                                     <div class="caixa"></div>
                                     <p>Rascunho</p>
-                                    <i class="bi bi-person-fill-gear"></i>
+                                    <i class="bi bi-pencil-square"></i>
                                 </div>
                             </div>
                         </div>

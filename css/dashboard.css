@@ -37,16 +37,51 @@ body {
     margin-left: 4%;
 }
 
-#butnav {
-    color: #DEEED4;
+#navi{
     border: 3px solid #6E9654;
-    background: none;
+    background: #95C577;
     border-radius: 10px;
     padding: 8px 60px 8px 60px;
+    position: absolute;
+    top: 15px;
+}
+
+
+#butnav1 {
+    color: #DEEED4;
+    background: none;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+#navnav1{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#navnav1 a{
+    text-decoration: none;
+    color: #DEEED4;
+    font-size: 30px;
+    margin-top: 10px;
+    margin: 5px;
+    position: relative;
+}
+
+.fechado.aberto{
+    max-height: 600px;
+    opacity: 1;
+}
+
+.fechado{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 /* dashboard */
@@ -166,6 +201,25 @@ body {
 }
 
 .animacao:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.animacao1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 70%;
+    height: 3px;
+    background: #DEEED4;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .4s;
+    transform-origin: right;
+}
+
+.animacao1:hover::after{
     transform-origin: left;
     transform: scaleX(1);
 }
