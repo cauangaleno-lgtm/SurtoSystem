@@ -37,25 +37,102 @@
             <div id="regheader">
                 <h1>Meus registros</h1>
                 <div id="topo">
-                    <button class="butones">+ Novo registro</button>
+                    <button class="butones" id="addbtn">+ Novo registro</button>
                 </div>
 
-                <div id="modal_add">
-                    <h1>Novo registro</h1>
-                    <div id="seletordiv">
-                        <label for="seletor">Tipo de tarefa</label>
-                        <select name="seletor" id="seletor">
-                            <option value="A"></option>
-                        </select>
-                    </div>
+                <div id="modal">
+                    <div id="modal_add">
+                        <h1>Novo registro</h1>
 
-                    <div id="btnmodal">
-                        <button class="butones">
-                            Avançar
-                        </button>
-                        <button class="butones">
-                            Cancelar
-                        </button>
+                        <div id="seletordiv" class="divdascaixadosmodal">
+                            <label for="seletor">Tipo de tarefa</label>
+                            <select name="seletor" id="seletor">
+                                <option value="Atendimento Individual">Atendimento Individual</option>
+                                <option value="Sala de aula">Sala de aula</option>
+                                <option value="Colaboradores">Colaboradores</option>
+                                <option value="Coletivas">Coletivas</option>
+                            </select>
+                        </div>
+
+
+                        <div class="btnmodal">
+                            <button class="butones" id="avancarbtn">
+                                Avançar
+                            </button>
+                            <button class="butones" id="fecharbtn">
+                                Cancelar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modal_nregistro">
+                    <div class="registrodiv">
+                        <h1>Novo registro</h1>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="seletor1">Tipo de tarefa</label>
+                                <select name="seletor1" class="seletor1">
+                                    <option value="Atendimento Individual">Atendimento Individual</option>
+                                    <option value="Sala de aula">Sala de aula</option>
+                                    <option value="Colaboradores">Colaboradores</option>
+                                    <option value="Coletivas">Coletivas</option>
+                                </select>
+                            </div>
+                            <div class="divdascaixadosmodal">
+                                <label for="">Tipo de tarefa</label>
+                                <div class="caixadosmodal"></div>
+                            </div>
+                        </div>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="seletor1">Tipo de tarefa</label>
+                                <select name="seletor1" class="seletor1">
+                                    <option value="Atendimento Individual">Atendimento Individual</option>
+                                    <option value="Sala de aula">Sala de aula</option>
+                                    <option value="Colaboradores">Colaboradores</option>
+                                    <option value="Coletivas">Coletivas</option>
+                                </select>
+                            </div>
+                            <div class="divdascaixadosmodal">
+                                <label for="">Tipo de tarefa</label>
+                                <div class="caixadosmodal"></div>
+                            </div>
+                        </div>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="seletor1">Tipo de tarefa</label>
+                                <select name="seletor1" class="seletor1">
+                                    <option value="Atendimento Individual">Atendimento Individual</option>
+                                    <option value="Sala de aula">Sala de aula</option>
+                                    <option value="Colaboradores">Colaboradores</option>
+                                    <option value="Coletivas">Coletivas</option>
+                                </select>
+                            </div>
+                            <div class="divdascaixadosmodal">
+                                <label for="">Tipo de tarefa</label>
+                                <div class="caixadosmodal"></div>
+                            </div>
+                        </div>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="" id="labelobs">Observações</label>
+                                <div class="campObs"></div>
+                            </div>
+                        </div>
+
+                        <div class="btnmodal">
+                            <button class="butones salvarregistro" id="">
+                                Salvar
+                            </button>
+                            <button class="butones" id="cancelarregistro">
+                                Cancelar
+                            </button>
+                        </div>
                     </div>
                 </div>
 

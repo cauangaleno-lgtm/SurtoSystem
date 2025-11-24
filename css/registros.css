@@ -1,4 +1,3 @@
-
 /* background */
 * {
     margin: 0;
@@ -31,14 +30,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 #navbar i {
     font-size: 25px;
     margin-left: 4%;
 }
-#navi{
+
+#navi {
     border: 3px solid #6E9654;
     background: #95C577;
     border-radius: 10px;
@@ -57,13 +57,13 @@ body {
     cursor: pointer;
 }
 
-#navnav2{
-    
+#navnav2 {
+
     display: flex;
     flex-direction: column;
 }
 
-#navnav2 a{
+#navnav2 a {
     text-decoration: none;
     color: #DEEED4;
     font-size: 30px;
@@ -81,7 +81,7 @@ body {
 
 }
 
-#registros{
+#registros {
     margin-top: 10px;
     width: 80%;
     background: #EBF5E5;
@@ -93,7 +93,7 @@ body {
     align-items: center;
 }
 
-#regheader{
+#regheader {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -103,18 +103,18 @@ body {
     color: #84AF68;
 }
 
-#regheader h1{
+#regheader h1 {
     font-size: 40px;
 }
 
-#topo{
+#topo {
     display: flex;
     width: 77%;
     justify-content: end;
     margin-bottom: 20px;
 }
 
-.butones{
+.butones {
     background: #95C577;
     color: #EBF5E5;
     border: none;
@@ -123,10 +123,10 @@ body {
     border-radius: 99px;
     cursor: pointer;
     font-weight: 600;
-    
+
 }
 
-#filtro{
+#filtro {
     width: 40%;
     padding: 5px 0px 5px 0px;
     display: flex;
@@ -145,7 +145,7 @@ body {
     flex-direction: column;
 }
 
-#btnfiltro{
+#btnfiltro {
     color: #84A686;
     border: none;
     background: none;
@@ -154,46 +154,46 @@ body {
     left: 93%;
 }
 
-#StatusH2{
+#StatusH2 {
     margin-right: 32px;
 }
 
-#filtro i{
+#filtro i {
     font-size: 30px;
 }
 
-#filt-head{
+#filt-head {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.fechado.aberto{
+.fechado.aberto {
     max-height: 600px;
     opacity: 1;
 }
 
-.fechado{
+.fechado {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
-#itens{
+#itens {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-#filtrao{
+#filtrao {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
-#data{
+#data {
     width: 14%;
     height: 17px;
     padding: 9px 18px;
@@ -205,30 +205,30 @@ body {
     outline: none;
 }
 
-#pesquisa{
+#pesquisa {
     display: flex;
     position: relative;
     width: 16%;
     height: 45px;
     margin-left: 50%;
-    
+
 }
 
-#pesq{
+#pesq {
     width: 100%;
     padding: 9px 18px;
     border: solid #84AF68 4px;
     border-radius: 99px;
-    color: white;
+    color: #84A686;
     cursor: text;
     background: none;
     outline: none;
     font-size: 15px;
-    
+
 }
 
 #pesq::placeholder {
-    color: #84A686;
+    color: #84a686a4;
     font-weight: 600;
 }
 
@@ -241,23 +241,23 @@ body {
     font-size: 18px;
 }
 
-#filtro2{
+#filtro2 {
     width: 180px;
 
 }
 
-#filtro3{
+#filtro3 {
     width: 140px;
 }
 
-.item{
+.item {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
 }
 
-.caixa{
+.caixa {
     width: 18px;
     height: 18px;
     background: none;
@@ -266,7 +266,7 @@ body {
 }
 
 
-#butao_salvar{
+#butao_salvar {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -274,7 +274,7 @@ body {
 }
 
 
-#lista{
+#lista {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -295,7 +295,7 @@ body {
     align-items: center;
 }
 
-.registros a{
+.registros a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -317,38 +317,137 @@ body {
     transform-origin: right;
 }
 
-.animacao:hover::after{
+.animacao:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
 
-.registros i{
+.registros i {
     font-size: 30px;
 }
 
-.titulo{
+.titulo {
     width: 38%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#modal_add{
+#modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnmodal{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#modal_add {
     background: #EBF5E5;
     border: 6px solid #C4DFB2;
     border-radius: 25px;
     width: 30%;
     height: 30vh;
-    z-index: 10;
-    position: absolute;
-    top: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
-#seletordiv{
+#seletor {
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    color: #84AF68;
+    font-size: 14px;
+    border: solid #84AF68 3px;
+    outline: none;
+}
+
+.gp_cx{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divdascaixadosmodal{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.divdascaixadosmodal label{
+    font-size: 20px;
+    margin-right: 48%;
+    margin-bottom: 5px;
+}
+
+.caixadosmodal{
+    width: 80%;
+    height: 36px;
+    border-radius: 10px;
+    color: #84AF68;
+    font-size: 14px;
+    border: solid #84AF68 3px;
+    background: white;
+}
+
+.campObs{
+    width: 89.6%;
+    height: 100px;
+    border-radius: 10px;
+    color: #84AF68;
+    font-size: 14px;
+    border: solid #84AF68 3px;
+    background: white;
+}
+
+#labelobs{
+    margin-right: 75%;
+}
+
+#modal_nregistro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.registrodiv{
+    background: #EBF5E5;
+    border: 6px solid #C4DFB2;
+    border-radius: 25px;
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.seletor1 {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    color: #84AF68;
+    font-size: 14px;
+    border: solid #84AF68 3px;
+    outline: none;
+    pointer-events: none;
 }
