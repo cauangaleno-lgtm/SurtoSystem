@@ -385,12 +385,16 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    justify-content: flex-start;
+    position: relative;
 }
 
-.divdascaixadosmodal label{
+.labeis{
     font-size: 20px;
-    margin-right: 48%;
-    margin-bottom: 5px;
+    position: absolute;
+    bottom: 75%;
+    transform: translateY(-50%);
+    left: 15%;
 }
 
 .caixadosmodal{
@@ -414,10 +418,50 @@ body {
 }
 
 #labelobs{
-    margin-right: 75%;
+    font-size: 20px;
+    position: absolute;
+    bottom: 90%;
+    transform: translateY(-50%);
+    left: 7.5%;
 }
 
 #modal_nregistro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal_detai_concluido {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal_detai_editar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal_detai_pend_rasc {
     position: fixed;
     top: 0;
     left: 0;
@@ -450,4 +494,23 @@ body {
     border: solid #84AF68 3px;
     outline: none;
     pointer-events: none;
+}
+
+.status{
+    width: 25%;
+    height: 80px;
+    border-radius: 10px;
+    color: #84AF68;
+    font-size: 14px;
+    border: solid #84AF68 3px;
+    outline: none;
+    margin-right: 55%;
+}
+
+#statuslabel{
+    font-size: 20px;
+    position: absolute;
+    bottom: 85%;
+    transform: translateY(-50%);
+    left: 15%;
 }

@@ -72,7 +72,7 @@
 
                         <div class="gp_cx">
                             <div class="divdascaixadosmodal">
-                                <label for="seletor1">Tipo de tarefa</label>
+                                <label for="seletor1" class="labeis">Tipo de tarefa</label>
                                 <select name="seletor1" class="seletor1">
                                     <option value="Atendimento Individual">Atendimento Individual</option>
                                     <option value="Sala de aula">Sala de aula</option>
@@ -81,47 +81,43 @@
                                 </select>
                             </div>
                             <div class="divdascaixadosmodal">
-                                <label for="">Tipo de tarefa</label>
-                                <div class="caixadosmodal"></div>
+                                <label for="" class="labeis">Título</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                                
                             </div>
                         </div>
 
                         <div class="gp_cx">
                             <div class="divdascaixadosmodal">
-                                <label for="seletor1">Tipo de tarefa</label>
-                                <select name="seletor1" class="seletor1">
-                                    <option value="Atendimento Individual">Atendimento Individual</option>
-                                    <option value="Sala de aula">Sala de aula</option>
-                                    <option value="Colaboradores">Colaboradores</option>
-                                    <option value="Coletivas">Coletivas</option>
-                                </select>
+                                <label for="" class="labeis">Data</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
                             </div>
                             <div class="divdascaixadosmodal">
-                                <label for="">Tipo de tarefa</label>
-                                <div class="caixadosmodal"></div>
+                                <label for="" class="labeis">Horário</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
                             </div>
                         </div>
 
                         <div class="gp_cx">
                             <div class="divdascaixadosmodal">
-                                <label for="seletor1">Tipo de tarefa</label>
-                                <select name="seletor1" class="seletor1">
-                                    <option value="Atendimento Individual">Atendimento Individual</option>
-                                    <option value="Sala de aula">Sala de aula</option>
-                                    <option value="Colaboradores">Colaboradores</option>
-                                    <option value="Coletivas">Coletivas</option>
-                                </select>
+                                <label for="" class="labeis">Encaminhamento</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
                             </div>
                             <div class="divdascaixadosmodal">
-                                <label for="">Tipo de tarefa</label>
-                                <div class="caixadosmodal"></div>
+                                <label for="" id="statuslabel">Status</label>
+                                <select name="seletor1" class="status">
+                                    <option value="Rascunho">Rascunho</option>
+                                    <option value="Concluído">Concluído</option>
+                                    <option value="Pendente">Pendente</option>
+                                    
+                                </select> 
                             </div>
                         </div>
 
                         <div class="gp_cx">
                             <div class="divdascaixadosmodal">
                                 <label for="" id="labelobs">Observações</label>
-                                <div class="campObs"></div>
+                                <textarea name="" id="" class="campObs"></textarea>
                             </div>
                         </div>
 
@@ -136,8 +132,197 @@
                     </div>
                 </div>
 
-                <div id="modal_detai">
+                <div class="modal_detai_concluido">
+                    <div class="registrodiv">
+                        <h1>Novo registro</h1>
 
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="seletor1" class="labeis">Tipo de tarefa</label>
+                                <select name="seletor1" class="seletor1">
+                                    <option value="Atendimento Individual">Atendimento Individual</option>
+                                    <option value="Sala de aula">Sala de aula</option>
+                                    <option value="Colaboradores">Colaboradores</option>
+                                    <option value="Coletivas">Coletivas</option>
+                                </select>
+                            </div>
+                            <div class="divdascaixadosmodal">
+                                <label for="" class="labeis">Título</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                                
+                            </div>
+                        </div>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="" class="labeis">Data</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                            </div>
+                            <div class="divdascaixadosmodal">
+                                <label for="" class="labeis">Horário</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                            </div>
+                        </div>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="" class="labeis">Encaminhamento</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                            </div>
+                            <div class="divdascaixadosmodal">
+                                <label for="" id="statuslabel">Status</label>
+                                <select name="seletor1" class="status">
+                                    <option value="Rascunho">Rascunho</option>
+                                    <option value="Concluído">Concluído</option>
+                                    <option value="Pendente">Pendente</option>
+                                    
+                                </select> 
+                            </div>
+                        </div>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="" id="labelobs">Observações</label>
+                                <textarea name="" id="" class="campObs"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="btnmodal">
+                            <button class="butones fecharregistro" id="">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal_detai_editar">
+                    <div class="registrodiv">
+                        <h1>Novo registro</h1>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="seletor1" class="labeis">Tipo de tarefa</label>
+                                <select name="seletor1" class="seletor1">
+                                    <option value="Atendimento Individual">Atendimento Individual</option>
+                                    <option value="Sala de aula">Sala de aula</option>
+                                    <option value="Colaboradores">Colaboradores</option>
+                                    <option value="Coletivas">Coletivas</option>
+                                </select>
+                            </div>
+                            <div class="divdascaixadosmodal">
+                                <label for="" class="labeis">Título</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                                
+                            </div>
+                        </div>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="" class="labeis">Data</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                            </div>
+                            <div class="divdascaixadosmodal">
+                                <label for="" class="labeis">Horário</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                            </div>
+                        </div>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="" class="labeis">Encaminhamento</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                            </div>
+                            <div class="divdascaixadosmodal">
+                                <label for="" id="statuslabel">Status</label>
+                                <select name="seletor1" class="status">
+                                    <option value="Rascunho">Rascunho</option>
+                                    <option value="Concluído">Concluído</option>
+                                    <option value="Pendente">Pendente</option>
+                                    
+                                </select> 
+                            </div>
+                        </div>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="" id="labelobs">Observações</label>
+                                <textarea name="" id="" class="campObs"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="btnmodal">
+                            <button class="butones" id="abrireditar">
+                                Editar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal_detai_pend_rasc">
+                    <div class="registrodiv">
+                        <h1>Novo registro</h1>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="seletor1" class="labeis">Tipo de tarefa</label>
+                                <select name="seletor1" class="seletor1">
+                                    <option value="Atendimento Individual">Atendimento Individual</option>
+                                    <option value="Sala de aula">Sala de aula</option>
+                                    <option value="Colaboradores">Colaboradores</option>
+                                    <option value="Coletivas">Coletivas</option>
+                                </select>
+                            </div>
+                            <div class="divdascaixadosmodal">
+                                <label for="" class="labeis">Título</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                                
+                            </div>
+                        </div>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="" class="labeis">Data</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                            </div>
+                            <div class="divdascaixadosmodal">
+                                <label for="" class="labeis">Horário</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                            </div>
+                        </div>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="" class="labeis">Encaminhamento</label>
+                                <input type="text" name="" id="" class="caixadosmodal">
+                            </div>
+                            <div class="divdascaixadosmodal">
+                                <label for="" id="statuslabel">Status</label>
+                                <select name="seletor1" class="status">
+                                    <option value="Rascunho">Rascunho</option>
+                                    <option value="Concluído">Concluído</option>
+                                    <option value="Pendente">Pendente</option>
+                                    
+                                </select> 
+                            </div>
+                        </div>
+
+                        <div class="gp_cx">
+                            <div class="divdascaixadosmodal">
+                                <label for="" id="labelobs">Observações</label>
+                                <textarea name="" id="" class="campObs"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="btnmodal">
+                            <button class="butones" id="salvareditar">
+                                Salvar
+                            </button>
+
+                            <button class="butones" id="cancelareditar">
+                                Cancelar
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="filtro">
@@ -188,7 +373,7 @@
 
                                 <div class="item">
                                     <div class="caixa"></div>
-                                    <p>Marcado</p>
+                                    <p>Pendente</p>
                                     <i class="bi bi-clock"></i>
                                 </div>
 
@@ -200,7 +385,7 @@
                             </div>
                         </div>
                         <div id="butao_salvar">
-                            <button class="butones">Salvar</button>
+                            <button class="butones" id="btnfiltsave">Salvar</button>
                         </div>
 
                     </div>
@@ -218,7 +403,7 @@
                     </div>
                     <p>10/11/2025</p>
                     <i class="bi bi-pencil-square"></i>
-                    <a href="" class="animacao">Ver detalhes <i class="bi bi-arrow-right-short"></i></a>
+                    <a href="" class="animacao editar">Ver detalhes <i class="bi bi-arrow-right-short"></i></a>
                 </div>
 
                 <div class="registros">
@@ -228,7 +413,7 @@
                     </div>
                     <p>10/11/2025</p>
                     <i class="bi bi-clock"></i>
-                    <a href="" class="animacao">Ver detalhes <i class="bi bi-arrow-right-short"></i></a>
+                    <a href="" class="animacao editar">Ver detalhes <i class="bi bi-arrow-right-short"></i></a>
                 </div>
 
                 <div class="registros">
@@ -238,7 +423,7 @@
                     </div>
                     <p>10/11/2025</p>
                     <i class="bi bi-check2"></i>
-                    <a href="" class="animacao">Ver detalhes <i class="bi bi-arrow-right-short"></i></a>
+                    <a href="" class="animacao concluido">Ver detalhes <i class="bi bi-arrow-right-short"></i></a>
                 </div>
 
                 <div class="registros">
@@ -248,7 +433,7 @@
                     </div>
                     <p>10/11/2025</p>
                     <i class="bi bi-clock"></i>
-                    <a href="" class="animacao">Ver detalhes <i class="bi bi-arrow-right-short"></i></a>
+                    <a href="" class="animacao editar">Ver detalhes <i class="bi bi-arrow-right-short"></i></a>
                 </div>
             </div>
 

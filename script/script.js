@@ -1,7 +1,11 @@
 const btn = document.getElementById("btnfiltro");
 const itens = document.getElementById("itens");
+const btnsave = document.getElementById("btnfiltsave");
 btn.addEventListener("click", () => {
     itens.classList.toggle("aberto");
+})
+btnsave.addEventListener("click", () => {
+    itens.classList.remove("aberto");
 })
 
 const navbtn = document.getElementById("butnav");
@@ -28,4 +32,14 @@ avancarbtn.addEventListener("click", () => {
 });
 cancelarbtn.addEventListener("click", () => {
     modal_nregistro.style.display = "none";
+});
+
+const detaiconcbtn = document.getElementsByClassName("concluido");
+const concbtn = document.getElementsByClassName("fecharregistro");
+const modalconc = document.getElementsByClassName("modal_detai_concluido");
+concbtn.addEventListener("click", () => {
+    modalconc.style.display = "flex";
+});
+cancelarbtn.addEventListener("click", () => {
+    modalconc.style.display = "none";
 });
