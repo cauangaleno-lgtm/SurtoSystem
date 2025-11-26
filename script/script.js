@@ -34,12 +34,28 @@ cancelarbtn.addEventListener("click", () => {
     modal_nregistro.style.display = "none";
 });
 
-const detaiconcbtn = document.getElementsByClassName("concluido");
-const concbtn = document.getElementsByClassName("fecharregistro");
-const modalconc = document.getElementsByClassName("modal_detai_concluido");
-concbtn.addEventListener("click", () => {
+const detaiconcbtn = document.querySelector(".concluido");
+const concbtn = document.querySelector(".fecharregistro");
+const modalconc = document.querySelector(".modal_detai_concluido");
+detaiconcbtn.addEventListener("click", (e) => {
+    e.preventDefault();
     modalconc.style.display = "flex";
 });
-cancelarbtn.addEventListener("click", () => {
+concbtn.addEventListener("click", () => {
     modalconc.style.display = "none";
+});
+
+
+
+const detaieditbtn = document.querySelector(".editar");
+const editbtn = document.querySelector(".abrireditar");
+const modaledit = document.querySelector(".modal_detai_editar");
+const modalpend_rasc = document.querySelector(".modal_detai_pend_rasc")
+detaieditbtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    modaledit.style.display = "flex";
+});
+editbtn.addEventListener("click", () => {
+    modalpend_rasc.style.display = "flex";
+    modaledit.style.display = "none";
 });
